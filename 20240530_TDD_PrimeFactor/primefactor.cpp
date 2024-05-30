@@ -6,11 +6,8 @@ public:
 	std::vector<int> GetPrimeFactors(int number)
 	{
 		std::vector<int> pfs;
-		if (number == 2)
-			pfs.push_back(2);
-
-		if (number == 3)
-			pfs.push_back(3);
+		if (number > 1)
+			pfs.push_back(number);
 
 		return pfs;
 	}
