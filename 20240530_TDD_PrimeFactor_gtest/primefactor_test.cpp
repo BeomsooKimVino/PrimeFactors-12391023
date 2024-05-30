@@ -26,3 +26,9 @@ TEST_F(PrimeFactorsFixture, Test3) {
 	EXPECT_EQ(expected, pf.GetPrimeFactors(input));
 }
 
+TEST_F(PrimeFactorsFixture, Test4) {
+	int input = 4;
+	expected = { 2, 2 };
+	EXPECT_EQ(expected, pf.GetPrimeFactors(input));
+}
+
