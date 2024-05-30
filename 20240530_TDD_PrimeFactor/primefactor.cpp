@@ -27,6 +27,11 @@ public:
 					}
 				}
 			}
+			else if (number == 9)
+			{
+				pfs.push_back(3);
+				pfs.push_back(3);
+			}
 			else
 				pfs.push_back(number);
 		}
