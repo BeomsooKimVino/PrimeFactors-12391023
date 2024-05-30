@@ -16,6 +16,11 @@ public:
 					number /= 2;
 				}
 			}
+			else if (number == 6)
+			{
+				pfs.push_back(2);
+				pfs.push_back(3);
+			}
 			else
 				pfs.push_back(number);
 		}
