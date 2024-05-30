@@ -9,15 +9,7 @@ public:
 		if (number > 1)
 		{
 			int divisor = 2;
-			if (number == 4)
-			{
-				while (number % 2 == 0)
-				{
-					pfs.push_back(2);
-					number /= 2;
-				}
-			}
-			else if (number == 6)
+			if (number == 4 || number == 6 || number == 9)
 			{
 				for (divisor = 2; number > 1; divisor++)
 				{
@@ -26,11 +18,6 @@ public:
 						number /= divisor;
 					}
 				}
-			}
-			else if (number == 9)
-			{
-				pfs.push_back(3);
-				pfs.push_back(3);
 			}
 			else
 				pfs.push_back(number);
