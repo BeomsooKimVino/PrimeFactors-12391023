@@ -6,14 +6,19 @@ public:
 	std::vector<int> GetPrimeFactors(int number)
 	{
 		std::vector<int> pfs;
-		if (number == 4)
+		if (number > 1)
 		{
-			pfs.push_back(2);
-			pfs.push_back(2);
+			if (number == 4)
+			{
+				while (number % 2 == 0)
+				{
+					pfs.push_back(2);
+					number /= 2;
+				}
+			}
+			else
+				pfs.push_back(number);
 		}
-		else if (number > 1)
-			pfs.push_back(number);
-
 		return pfs;
 	}
 };
