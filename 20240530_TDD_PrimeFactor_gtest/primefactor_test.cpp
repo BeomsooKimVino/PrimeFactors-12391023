@@ -3,7 +3,6 @@
 
 #include <vector>
 
-
 class PrimeFactorsFixture : public testing::Test {
 public:
 	PrimeFactors pf;
